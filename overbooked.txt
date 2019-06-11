@@ -1,0 +1,20 @@
+5 53000 1 Robert Hill
+3 89000 2 Amanda Trapp
+3 90000 3 Jonathan Nguyen
+5 56000 4 Tom Martin
+1 21000 5 Mary Lou Gilley
+3 89000 6 Bob Che
+7 72000 7 Warren Rexroad
+2 65000 8 Vincent Gonzales
+3 34000 9 Paula Hung
+6 21000 10 Lou Masson
+4 42000 11 Steve Chu
+3 99000 12 Linda Lee
+3 69000 13 Dave Lightfoot
+3 83000 14 Daniel Oh
+5 50000 15 Sue Andrews
+2 73000 16 Joanne Brown
+7 96000 17 Paul Ng
+5 53000 18 Steven Chen
+2 65000 19 Vladimir Johnson
+7 72000 20 Peter Edwards
