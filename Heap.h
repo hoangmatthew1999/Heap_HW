@@ -36,6 +36,7 @@ public:
     bool isFull()  const	{ return count == heapSize; }
 	bool insertHeap( ItemType &itemIn);
 	bool deleteHeap( int count, ItemType &itemOut  );
+    void printHeap();
 
 };
 
