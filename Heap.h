@@ -128,5 +128,13 @@ bool Heap<ItemType>::deleteHeap(int count, ItemType& returnItem)
 	return true;
 }
 
+template<class ItemType>
+void Heap<ItemType>::printHeap()
+{
+    int counter = 0;
+    for(int i = 0; i < getCount(); i++){
+        cout<<heapAry[2*i+2]<<endl<<"   "<<heapAry[i]<<endl<<"      "<<heapAry[2*i+1]<<endl;
+    }
+}
 
 #endif // HEAP_H_

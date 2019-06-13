@@ -18,49 +18,7 @@
 #include <stdlib.h>
 
 using namespace std;
-/*
-Customer * reading_from_file( ){
 
-    ifstream inputFile;
-    inputFile.open("overbooked.txt");
-    string testing_file;
-    int priority_value;
-    
-    int a;
-    int b;
-    int c;
-    Customer customer_array[999];
-    int i = 0;
-    string getline_name;
-    while(inputFile >> testing_file){
-        a = atoi(testing_file.c_str() );
-        inputFile >> testing_file;
-        
-        b = atoi(testing_file.c_str() );
-        
-        inputFile>>testing_file;
-        c = atoi(testing_file.c_str() );
-        
-        priority_value = a/1000 + b - c;
-        getline(inputFile, testing_file);
-        
-        Heap <int>waiting_list;
-        waiting_list.insertHeap(priority_value);
-        
-        customer_array[i].setMilage(b);
-        customer_array[i].setYears(a);
-        customer_array[i].setWaitlist(c);
-        customer_array[i].setName(testing_file);
-
-        i++;
-        cin.get();
-        
-    }
-    inputFile.close();
-    return customer_array;
-
-}
-*/
 void sort_function(Customer *array, int count_of_array){
     int i,j, key;
     for(int i = 1; i < count_of_array;i++){
@@ -112,6 +70,8 @@ int main()
     Customer customer_array[999];
     int i = 0;
     string getline_name;
+    Heap <int>waiting_list;
+
     while(inputFile >> testing_file){
         a = atoi(testing_file.c_str() );
         inputFile >> testing_file;
@@ -124,7 +84,6 @@ int main()
         priority_value = a/1000 + b - c;
         getline(inputFile, testing_file);
         
-        Heap <int>waiting_list;
         waiting_list.insertHeap(priority_value);
         
         customer_array[i].setMilage(b);
@@ -136,8 +95,9 @@ int main()
         
     }
     inputFile.close();
-    sort_function(customer_array,i);
-    print_function(customer_array,i);
+    //sort_function(customer_array,i);
+    //print_function(customer_array,i);
+    waiting_list.printHeap();
     
     return 0;
 }
